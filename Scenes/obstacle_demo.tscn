@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://ynf456eoijrt"]
+
+[ext_resource type="Script" uid="uid://byh5jym56j7ed" path="res://Scripts/Obstacle.cs" id="1_s7upe"]
+[ext_resource type="Script" uid="uid://b3luybyj4mfxf" path="res://Scripts/TournamentManager.cs" id="1_ywea7"]
+
+[node name="Tournament" type="Node" unique_id=617645591]
+script = ExtResource("1_ywea7")
+
+[node name="PrinterQueue" type="Node" parent="." unique_id=985240616]
+script = ExtResource("1_s7upe")
+metadata/_custom_type_script = "uid://byh5jym56j7ed"
+
+[node name="WifiDrop" type="Node" parent="." unique_id=1381664603]
+script = ExtResource("1_s7upe")
+Penalty = 12
+metadata/_custom_type_script = "uid://byh5jym56j7ed"
+
+[node name="MissingMarker" type="Node" parent="." unique_id=1961460891]
+script = ExtResource("1_s7upe")
+Penalty = 8
+metadata/_custom_type_script = "uid://byh5jym56j7ed"
